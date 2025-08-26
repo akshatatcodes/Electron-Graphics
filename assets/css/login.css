@@ -1,0 +1,285 @@
+/* General Styles */
+html[data-theme="light"] {
+    --bg-col: #fafafa;
+    --shadow1: rgba(0, 0, 0, 0.3);
+    --shadow2: rgba(0, 0, 0, 0.2);
+    --text: #191919;
+    --neu-light: white;
+    --neu-dark: #c3c3c3;
+    --neu-color: #c3c3c3;
+    --neu-icon: #c3c3c3;
+}
+
+html[data-theme="dark"] {
+    --bg-col: #272727;
+    --shadow1: rgba(128, 122, 122, 0.233);
+    --shadow2: rgba(231, 216, 216, 0.007);
+    --neu-light: #282828;
+    --neu-dark: #080808;
+    --neu-color: white;
+    --text: rgba(255, 255, 255, 0.5);
+    --neu-icon: whitesmoke;
+}
+
+html {
+    overflow-x: hidden;
+    max-width: 120%;
+    height: auto;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--bg-col);
+    transition: background-color 0.3s;
+}
+
+/* Light mode button styles */
+.light-mode-button {
+    background: 0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.light-mode-button:focus {
+    outline: none;
+}
+
+.light-mode-button span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #d6d7db;
+    box-shadow: inset 1px 1px 3px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+}
+
+.light-mode-button span:nth-child(2) {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: 0.3s;
+}
+
+body[light-mode="dark"] {
+    background-color: #141516;
+    color: #ced4e2;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(1) {
+    background-color: #ced4e2;
+    color: #141516;
+}
+
+body[light-mode="dark"] .light-mode-button span:nth-child(2) {
+    left: 65px;
+    background-color: #141516;
+}
+
+/* Registration Section Styles */
+section {
+    height: 70vh;
+}
+
+.px-3.pt-5 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.godown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.img-fluid {
+    max-width: 500px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 50%; /* Makes the image round */
+    object-fit: cover;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.registration-header {
+    font-weight: bold;
+    color: #4e00bb; /* Customize as needed */
+    margin-bottom: 0.5rem; /* Reduced margin to bring it closer to the form */
+}
+
+.pre-heading {
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Form Container Styles */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust height based on content */
+    width: 100%;
+    padding: 1rem; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding in width/height calculation */
+    background: var(--bg-col);
+}
+
+/* Style the form */
+.form {
+    background: rgba(255, 255, 255, 0.8); /* White background with some opacity */
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Blur effect for the background */
+    max-width: 600px; /* Maximum width of the form */
+    width: 100%;
+}
+
+/* Style form groups */
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style form labels */
+.form-label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--text); /* Make sure the label color is visible */
+}
+
+/* Style input fields */
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: var(--neu-dark);
+    color: var(--text);
+}
+
+/* Style link as button */
+.form-a {
+    color: #4e00bb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-a:hover {
+    color: #3a00a0;
+    text-decoration: underline;
+}
+
+/* Admin Sign-In Section */
+.admin-signin {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.admin-signin .form-label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: inline; /* Ensure it stays on the same line */
+}
+
+.admin-signin .form-a {
+    color: #4e00bb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.admin-signin .form-a:hover {
+    color: #3a00a0;
+    text-decoration: underline;
+}
+
+
+/* Style submit button */
+.submit-button {
+    background-color: #4e00bb;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #3a00a0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .submit-button {
+        font-size: 0.8em;
+    }
+}
+
+/* Additional Layout Styles */
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.left,
+.right {
+    position: relative;
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/* Spacing for Registration Page Content */
+.registration-box {
+    padding: 1rem; /* Adjust padding around the form */
+    margin-top: 0.5rem; /* Reduced margin from the content above */
+}
+
+/* Paragraph spacing in registration box */
+.registration-box p {
+    margin-bottom: 1rem; /* Reduced margin below the paragraph */
+}

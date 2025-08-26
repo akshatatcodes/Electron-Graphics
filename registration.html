@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" light-mode="light">
+
+<head>
+    <title>Electron Graphics | Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- For Dark/Light mode Toggle -->
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <!-- Import Google Icon Font -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="assets/css/preloader.css">
+    <link rel="stylesheet" href="assets/css/registration.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png">
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script defer src="./assets/js/dynamicTitle.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M11CMZ12Q"></script>
+</head>
+
+<body class="no-scroll-preload">
+  <!-- Loader -->
+  <div class="loader-container">
+    <div class="atom">
+      <div class="electron"></div>
+      <div class="electron-alpha"></div>
+      <div class="electron-omega"></div>
+    </div>
+  </div>
+
+  <div class="container pt-5">
+    <section style="height: 70vh">
+      <div class="px-3 pt-5">
+        <div class="row">
+          <div class="col-md-6 godown">
+            <img src="assets/images/electron.jpg" class="img-fluid" alt="Image">
+          </div>
+          <div class="dropdown col-md-6 d-flex mt-5 flex-column text-center justify-content-center animate__animated animate__zoomIn animate__delay-1s">
+            <h2 class="main-heading registration-header mb-0">Register to Join Us</h2>
+            <p class="pre-heading font-weight-bolder mb-0 mt-3">
+              Fill out the form below to create an account and gain access to exclusive content and features.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Registration Form -->
+  <div class="form-container">
+    <form class="form registration-form" action="register.php" method="post">
+      <div class="form-group">
+        <label for="full-name" class="form-label">Full Name</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" class="form-input" required>
+      </div>
+      <div class="form-group">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" class="form-input" required>
+      </div>
+      <div class="form-group">
+        <label for="age" class="form-label">Age</label>
+        <input type="number" id="age" name="age" placeholder="Enter your age" class="form-input" required>
+      </div>
+      <div class="form-group">
+        <label for="mobile-number" class="form-label">Mobile Number</label>
+        <input type="tel" id="mobile-number" name="mobile-number" placeholder="Enter your mobile number" class="form-input" required>
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" class="form-input" required>
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" class="form-input" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm-password" class="form-label">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" class="form-input" required>
+      </div>
+      <button type="submit" name="submit" class="submit-button">Register</button>
+      <br/>
+      <br/>
+
+      <!-- Already have an account section -->
+      <div class="form-group alo">
+        <label class="form-label">Already have an Account? <a href="login.html" class="form-a">Login</a></label>
+
+    </div>
+    
+    
+    
+    </form>
+  </div>
+
+  <!-- Cursor -->
+  <div class="cursor-dot-outline"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/app1.js"></script>
+  <script src="assets/js/cursor.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+/* assets/css/style.css */
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background for light theme */
+    color: #212529; /* Dark text color */
+    margin: 0;
+    padding-top: 80px; /* Space for fixed navbar */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #343a40; /* Dark background for navbar */
+}
+
+.navbar-brand {
+    color: #ffffff !important; /* White text for brand */
+}
+
+.nav-link {
+    color: #ffffff !important; /* White text for links */
+}
+
+.nav-item-hover:hover .nav-link {
+    color: #f8f9fa !important; /* Light text color on hover */
+}
+
+/* Title Section Styles */
+.title-section {
+    text-align: center;
+    margin: 20px 0; /* Space around title */
+}
+
+.title-section h1 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    color: #343a40; /* Dark color for the title */
+}
+
+/* Messages Container Styles */
+#messages-container {
+    max-width: 800px; /* Limit the width of the messages container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding around messages */
+}
+
+.message {
+    background-color: #ffffff; /* White background for messages */
+    border: 1px solid #dee2e6; /* Light border for messages */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside each message */
+    margin-bottom: 15px; /* Space between messages */
+}
+
+.message h3 {
+    margin: 0 0 10px 0; /* Space below message title */
+    font-size: 1.5rem; /* Font size for message title */
+}
+
+.message p {
+    margin: 0 0 5px 0; /* Space below message text */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40; /* Dark background for footer */
+    color: #ffffff; /* White text for footer */
+    position: relative; /* Allow footer to be positioned relative to content */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width for footer */
+}
+
+/* Dark Theme Styles */
+[data-theme="dark"] {
+    background-color: #212529; /* Dark background for dark theme */
+    color: #f8f9fa; /* Light text color */
+}
+
+[data-theme="dark"] .navbar {
+    background-color: #343a40; /* Keep navbar dark in dark theme */
+}
+
+[data-theme="dark"] .message {
+    background-color: #343a40; /* Dark background for messages */
+    color: #f8f9fa; /* Light text for messages */
+}
+
+[data-theme="dark"] footer {
+    background-color: #343a40; /* Keep footer dark in dark theme */
+}

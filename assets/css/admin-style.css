@@ -1,0 +1,165 @@
+/* General Styles */
+html[data-theme="light"] {
+    --bg-col: #f5f5f5;
+    --text-col: #333;
+    --btn-bg: #007bff;
+    --btn-bg-hover: #0056b3;
+    --input-bg: #fff;
+    --input-border: #ddd;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme="dark"] {
+    --bg-col: #272727;
+    --text-col: #eaeaea;
+    --btn-bg: #495057;
+    --btn-bg-hover: #343a40;
+    --input-bg: #1e1e1e;
+    --input-border: #444;
+    --shadow: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background-color: var(--bg-col);
+    color: var(--text-col);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Admin Login Heading */
+h2.main-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-col);
+}
+
+p.pre-heading {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-col);
+}
+
+/* Admin Form Styles */
+.form-container {
+    background-color: var(--input-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px var(--shadow);
+    max-width: 500px;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-col);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: var(--input-bg);
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    color: var(--text-col);
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: var(--btn-bg);
+    outline: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--btn-bg);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--btn-bg-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .form-container {
+        padding: 1.5rem;
+    }
+
+    h2.main-heading {
+        font-size: 2rem;
+    }
+
+    .submit-button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2.main-heading {
+        font-size: 1.8rem;
+    }
+
+    .pre-heading {
+        font-size: 0.9rem;
+    }
+
+    .form-container {
+        padding: 1rem;
+    }
+
+    .form-input {
+        padding: 0.6rem;
+    }
+
+    .submit-button {
+        font-size: 0.85rem;
+    }
+}

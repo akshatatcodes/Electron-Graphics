@@ -1,0 +1,112 @@
+/* assets/css/dashboard.css */
+
+/* General Body Styles */
+html, body {
+    height: 100%; /* Ensure full height */
+    margin: 0;
+    font-family: Arial, sans-serif; /* Use a clean font */
+    background-color: #f8f9fa; /* Light background for light theme */
+    color: #212529; /* Dark text color */
+    display: flex;
+    flex-direction: column; /* Flexbox column layout */
+}
+
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #343a40; /* Dark background for navbar */
+}
+
+.navbar-brand {
+    color: #ffffff !important; /* White text for brand */
+}
+
+.nav-link {
+    color: #ffffff !important; /* White text for links */
+}
+
+.nav-item-hover:hover .nav-link {
+    color: #f8f9fa !important; /* Light text color on hover */
+}
+
+/* Title Section Styles */
+.title-section {
+    text-align: center;
+    margin-top: 80px; /* Margin to accommodate fixed navbar */
+}
+
+.title-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Slider Styles */
+.slider {
+    margin: 20px auto;
+    max-width: 800px; /* Limit slider width */
+}
+
+.slide img {
+    width: 100%; /* Responsive image */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Info Section Styles */
+.info-section {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Card Container Styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: center; /* Center the cards */
+    margin: 20px;
+}
+
+.card {
+    flex: 1 1 200px; /* Flexbox settings for responsiveness */
+    margin: 10px;
+    padding: 20px;
+    color: #ffffff; /* White text for card links */
+    text-align: center;
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.card a {
+    color: white; /* Ensures link text is white */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+}
+
+.card:hover {
+    opacity: 0.9; /* Slightly dim on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40; /* Dark background for footer */
+    color: #ffffff; /* White text for footer */
+}
+
+/* Dark Theme Styles */
+[data-theme="dark"] {
+    background-color: #212529; /* Dark background for dark theme */
+    color: #f8f9fa; /* Light text color */
+}
+
+[data-theme="dark"] .navbar {
+    background-color: #343a40; 
+}
+
+[data-theme="dark"] .card {
+    opacity: 0.9; /* For better visibility in dark mode */
+}
+
+[data-theme="dark"] footer {
+    background-color: #343a40; /* Same as light theme */
+    color: #ffffff; /* White text for footer */
+}
